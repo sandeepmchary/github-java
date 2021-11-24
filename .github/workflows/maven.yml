@@ -25,7 +25,7 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
     - name: Build and push to Docker
-    - uses: mr-smithers-excellent/docker-build-push@v5
+      uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: formycore/githubactions_demo
         tags: latest
